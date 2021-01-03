@@ -1,7 +1,12 @@
 {
   "baseUrl": "http://localhost:8080",
-  "reporter": "junit",
+  "reporter": "cypress-mochawesome-reporter",
   "reporterOptions": {
-    "mochaFile": "cypress/results/output.xml"
-  }
+    "mochaFile": "cypress/results/output.xml",
+    "reportDir": "cypress/results/reports",
+    "charts": false,
+    "html": true,
+    "json": true
+  },
+  "screenshotsFolder": "cypress/results/reports/screenshots"
 }
